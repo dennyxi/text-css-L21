@@ -1,0 +1,255 @@
+* {
+  padding: 0;
+  margin: 0;
+}
+/* nav-container */
+.nav-container {
+  width: 100%;
+  height: 150px;
+  /* background: linear-gradient(30deg, #03001e, #7303c0, #ec38bc); */
+  display: flex;
+  color: white;
+  position: fixed;
+  z-index: 99;
+}
+.nav-logo {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  justify-items: center;
+  align-items: center;
+}
+.nav-logo img {
+  width: 100px;
+  height: 100px;
+  margin-left: 10%;
+}
+.nav-logo h3 {
+  font-size: 50pt;
+  font-weight: normal;
+  margin-left: 50px;
+}
+.nav-ul {
+  width: 60%;
+  height: 100%;
+}
+.nav-ul ul {
+  width: 100%;
+  height: 100%;
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.nav-ul li {
+  width: 20%;
+  height: 100%;
+}
+.nav-ul a {
+  padding: 75px 30px 55px 30px;
+  line-height: 150px;
+  font-size: 22pt;
+  text-decoration: none;
+  color: white;
+}
+.nav-ul a:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+.main-first-container {
+  width: 100%;
+  height: 100%;
+  padding-top: 150px;
+  background: linear-gradient(60deg, #03001e, #7303c0, #ec38bc);
+  display: flex;
+}
+.main-first-text {
+  width: 70%;
+  margin-top: 250px;
+  text-align: center;
+  color: white;
+}
+.main-first-text h3 {
+  font-size: 80pt;
+  font-weight: normal;
+}
+.main-first-text p {
+  margin: 15px auto;
+  width: 60%;
+  font-size: 20pt;
+  line-height: 50px;
+}
+.download {
+  width: 40%;
+  height: 100px;
+  border-radius: 50px;
+  background: #2ecc71;
+  margin: 45px auto;
+}
+.download a {
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #03001e;
+  line-height: 100px;
+  font-size: 30pt;
+  font-weight: lighter;
+}
+.main-first-images {
+  margin: 150px auto 100px 0;
+  width: 500px;
+  height: 1000px;
+  overflow: hidden;
+  position: relative;
+}
+.images-container {
+  width: 1800px;
+  height: 1000px;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-items: center;
+  align-items: center;
+  animation-name: move;
+  animation-duration: 4s;
+  animation-delay: 3s;
+  animation-iteration-count: infinite;
+}
+@keyframes move {
+  from {
+    transform: translateX(0);
+  }
+  50% {
+    transform: translateX(-600px);
+  }
+  100% {
+    transform: translateX(-1200px);
+  }
+}
+.images-container img {
+  width: 500px;
+  height: 1000px;
+  margin: 0 100px 0 0;
+}
+.images-links {
+  position: absolute;
+  top: 1050px;
+  left: 25px;
+  width: 100%;
+  height: 15px;
+  display: flex;
+  flex-flow: row;
+  align-items: center;
+  justify-content: center;
+}
+.images-link3,
+.images-link2,
+.images-link1 {
+  margin: 0 15px;
+  width: 50px;
+  height: 15px;
+  background: #2ecc71;
+  cursor: pointer;
+}
+.main-second-contianer {
+  width: 100%;
+  height: 100%;
+  padding: 150px 0;
+  background: #03001e;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+.main-second-clock {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.clock-image {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(30deg, #03001e, #7303c0, #ec38bc);
+  border-radius: 50%;
+}
+.clock-image img {
+  width: 80px;
+  height: 80px;
+  padding: 60px;
+}
+.clock-title {
+  margin: 25px 0;
+}
+.clock-title h3 {
+  font-size: 30pt;
+  color: #2ecc71;
+  font-weight: lighter;
+}
+.clock-text p {
+  font-size: 22pt;
+  line-height: 50px;
+  font-weight: lighter;
+}
+.main-second-star {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.star-image {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(30deg, #03001e, #7303c0, #ec38bc);
+  border-radius: 50%;
+}
+.star-image img {
+  width: 80px;
+  height: 80px;
+  padding: 60px;
+}
+.star-title {
+  margin: 25px 0;
+}
+.star-title h3 {
+  font-size: 30pt;
+  color: #2ecc71;
+  font-weight: lighter;
+}
+.star-text p {
+  font-size: 22pt;
+  line-height: 50px;
+  font-weight: lighter;
+}
+.main-second-picture {
+  width: 30%;
+  margin: 0 auto;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+}
+.picture-image {
+  width: 200px;
+  height: 200px;
+  background: linear-gradient(30deg, #03001e, #7303c0, #ec38bc);
+  border-radius: 50%;
+}
+.picture-image img {
+  width: 80px;
+  height: 80px;
+  padding: 60px;
+}
+.picture-title {
+  margin: 25px 0;
+}
+.picture-title h3 {
+  font-size: 30pt;
+  color: #2ecc71;
+  font-weight: lighter;
+}
+.picture-text p {
+  font-size: 22pt;
+  line-height: 50px;
+  font-weight: lighter;
+}
