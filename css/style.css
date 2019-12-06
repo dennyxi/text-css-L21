@@ -299,7 +299,7 @@
 }
 .move-image2 {
   display: flex;
-  flex-flow: row-reverse;
+
   align-items: center;
   width: 600px;
   height: 400px;
@@ -308,7 +308,7 @@
 }
 .move-image3 {
   display: flex;
-  flex-flow: row-reverse;
+
   align-items: center;
   width: 600px;
   height: 400px;
@@ -335,9 +335,16 @@
 .move-image-img {
   width: 100px;
   height: 100px;
-
+  position: relative;
   border-radius: 50%;
   background: rgba(0, 0, 0, 0.3);
+}
+.move-border {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 94px;
+  height: 94px;
 }
 .move-image-img img {
   width: 50px;
@@ -407,31 +414,111 @@
 }
 .third-image1 .move-image1:hover {
   border-radius: 30px;
-  background: linear-gradient(60deg, #7303c0);
+  background: transparent;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
 }
+.third-image1 .move-image1:hover .move-border {
+  border: 6px dashed white;
+  border-radius: 50%;
+  animation-name: move-border;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
 .third-image1 .move-image2:hover {
   border-radius: 30px;
-  background: linear-gradient(60deg, #03001e, #7303c0);
+  background: transparent;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+
+.third-image1 .move-image2:hover .move-border {
+  border: 6px dashed white;
+  border-radius: 50%;
+  animation-name: move-border;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 .third-image1 .move-image3:hover {
   border-radius: 30px;
-  background: linear-gradient(60deg, #03001e);
+  background: transparent;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.third-image1 .move-image3:hover .move-border {
+  border: 6px dashed white;
+  border-radius: 50%;
+  animation-name: move-border;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 .third-image3 .move-image4:hover {
   border-radius: 30px;
-  background: linear-gradient(60deg, #ec38bc);
+  background: transparent;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.third-image3 .move-image4:hover .move-border {
+  border: 6px dashed white;
+  border-radius: 50%;
+  animation-name: move-border;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 .third-image3 .move-image5:hover {
   border-radius: 30px;
-  background: linear-gradient(60deg, #7303c0, #ec38bc);
+  background: transparent;
   box-shadow: 0 10px 10px rgba(0, 0, 0, 0.2);
+}
+.third-image3 .move-image5:hover .move-border {
+  border: 6px dashed white;
+  border-radius: 50%;
+  animation-name: move-border;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
 }
 .third-image3 .move-image6:hover {
   border-radius: 30px;
-  background: linear-gradient(60deg, #7303c0);
+  background: transparent;
   box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.2);
+}
+.third-image3 .move-image6:hover .move-border {
+  border: 6px dashed white;
+  border-radius: 50%;
+  animation-name: move-border;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+@keyframes move-border {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.main-fourth-container {
+  width: 100%;
+  height: 100%;
+  padding: 150px 0;
+  background: #03001e;
+}
+.main-fourth-title {
+  display: flex;
+  flex-flow: column;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 100px;
+}
+.main-fourth-title h3 {
+  font-size: 50pt;
+  font-weight: lighter;
+  color: white;
+}
+.main-fourth-title img {
+  width: 300px;
+  height: 80px;
 }
