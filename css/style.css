@@ -10,7 +10,7 @@
   display: flex;
   color: white;
   position: fixed;
-  z-index: 99;
+  z-index: 50;
 }
 .nav-logo {
   width: 40%;
@@ -509,13 +509,13 @@
   display: flex;
   flex-flow: column;
   align-items: center;
+  position: relative;
 }
 .main-fourth-title {
   display: flex;
   flex-flow: column;
   justify-content: center;
   align-items: center;
-  padding-bottom: 100px;
 }
 .main-fourth-title h3 {
   font-size: 50pt;
@@ -590,4 +590,81 @@
   transform: translate3d(-600px, 200px, -560px) scale(0);
   z-index: 6;
   opacity: 0;
+}
+
+/* Unopened .id-container */
+.id-container {
+  display: none;
+}
+
+/* Opened .id-container */
+.id-container:target {
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  z-index: 99;
+}
+
+/* .id-container content */
+.id-container img {
+  width: 400px;
+  height: 800px;
+  position: relative;
+  padding: 1.5em;
+}
+
+/* Close button */
+.id-container .close {
+  position: absolute;
+  top: 50px;
+  right: 150px;
+  display: block;
+}
+
+.id-container .close::after {
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  display: flex;
+  z-index: 1;
+  align-items: center;
+  justify-content: center;
+  background-color: black;
+  border-radius: 50%;
+  color: white;
+  font-size: 50pt;
+  content: "X";
+  cursor: pointer;
+}
+
+/* .id-container overlay */
+.id-container .close::before {
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(0, 0, 0, 0.7);
+  content: "";
+  cursor: default;
+}
+/* main-fifth-container */
+.main-fifth-container {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-flow: column;
+  align-items: center;
+  background: linear-gradient(60deg, #03001e, #7303c0, #ec38bc);
+}
+.main-fifth-container h3 {
+  padding-top: 150px;
+  font-size: 50pt;
+  font-weight: lighter;
+  color: white;
 }
