@@ -923,12 +923,27 @@
   height: 100px;
   text-align: center;
   line-height: 100px;
-
-  background: linear-gradient(60deg, #03001e, #7303c0, #ec38bc);
+}
+.seventh-send button {
+  width: 1000px;
+  height: 100px;
+  outline: none;
+  border: none;
   border-radius: 50px;
+  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.3);
+  background: linear-gradient(60deg, #03001e, #7303c0, #ec38bc);
 }
 .seventh-send p {
   font-size: 30pt;
   color: white;
-  box-shadow: 0 5px 11px 0 rgba(0, 0, 0, 0.3);
+}
+.seventh-send:hover button {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 11px 0 rgba(0, 0, 0, 0.5);
+}
+.footer {
+  margin-top: 150px;
+  font-size: 25pt;
+  text-align: center;
+  color: white;
 }
